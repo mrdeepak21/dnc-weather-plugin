@@ -1,0 +1,77 @@
+@import "weather-icons.min.css";
+:root{
+    --white:#fff;
+    --black: #000;
+    --text-red:#ffb4b4;
+    --text-light-blue: #93bffe;
+    --text-dark-blue:#1f567c;
+    --text-yellow: #febc2f;
+}
+
+.container{
+    background-color: var(--text-dark-blue);
+    padding: 1em;
+    color: var(--white);
+    font-family: 'barlo',Helvetica-nue,Helvetica;
+    text-align: center;
+}
+
+
+.row, .row-main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.row{
+    justify-content: space-around;
+}
+
+.col-md-12 {
+    width: 50%;
+}
+
+/* [class$=".col"]{
+    padding: 5px;
+} */
+
+.col-4{
+    width: 40%;
+}
+
+.col-8{
+    width: 60%;
+}
+
+.temp{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.temp *{
+    padding: 0 5px;
+    font-size: small;
+}
+
+.large{
+    font-size: 60px;
+}
+
+.text-red{
+    color: var(--text-red);
+}
+.text-light-blue{
+    color: var(--text-light-blue);
+}
+
+/* @media css*/
+
+@media (max-width: 1023px) {
+    .row-main{
+        flex-direction: column;
+    }
+    .col-md-12 {
+        width: 100%;
+    }
+}
