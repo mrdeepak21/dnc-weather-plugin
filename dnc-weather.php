@@ -11,7 +11,7 @@
  *  */
 
 //register shortcode
-add_shortcode('gpm_weather', require_once ('front-end/index.html'));
+add_shortcode('gpm_weather', function(){require_once ('front-end/index.html');});
 
 //Insert style
 add_action('wp_head',function(){
